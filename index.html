@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>By Ilhamrifandi</title>
+    <!--Boostraps css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacquard+24+Charted&family=Jersey+15+Charted&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+<!-- Style css-->
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="container-sm p-5 " style="background-image: url('astronaut-cat-moon-digital-art-4k-wallpaper-uhdpaper.com-261@0@j.jpg'); background-position: center;  background-repeat: no-repeat; background-size: cover;">
+    <div>
+        <p style="text-align: center;color:rgb(249, 243, 243);;font-family: 'Jersey 15 Charted', sans-serif; font-size: xx-large; ">APLIKASI NILAI</p>
+    </div>
+
+    <!-- Form Penilaian -->
+    <form id="formPenilaian">
+        <div class="mb-3" style="background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgb(5, 119, 241);
+        backdrop-filter: blur( 6.5px );
+        -webkit-backdrop-filter: blur( 6.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );">
+          <label for="exampleInputEmail1" class="form-label text-light">Nim</label>
+          <input type="text" class="form-control" id="nim" name="nim" required>
+          
+        </div>
+        <div class="mb-3"style="background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgb(5, 119, 241);
+        backdrop-filter: blur( 6.5px );
+        -webkit-backdrop-filter: blur( 6.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 ); " >
+            <label for="exampleInputEmail1" class="form-label text-light">Nama</label>
+            <input type="text" class="form-control" id="nama" name="nama" required>
+            
+          </div>
+          <fieldset>
+            <div class="row">
+                <div class=" container col-sm-6 mb-3 mb-sm-0">
+                  <div class="card" style="background: rgba( 255, 255, 255, 0.25 );
+                  box-shadow: 0 8px 32px 0 rgb(5, 119, 241);
+                  backdrop-filter: blur( 6.5px );
+                  -webkit-backdrop-filter: blur( 6.5px );
+                  border-radius: 10px;
+                  border: 1px solid rgba( 255, 255, 255, 0.18 );">
+                    <div class="card-body text-light">
+                        <legend style="text-align: center; color:rgb(254, 254, 253);;font-family: 'Jersey 15 Charted', sans-serif; font-size: xx-large; "">Nilai Teori</legend>
+                        <label for="presensiTeori">Presensi:</label>
+                        <input type="number" id="presensiTeori" class="form-control" name="presensiTeori" required><br><br>
+            
+                        <label for="tugasTeori">Tugas:</label>
+                        <input type="number" id="tugasTeori" class="form-control"  name="tugasTeori" required><br><br>
+            
+                        <label for="utsTeori">UTS:</label>
+                        <input type="number" id="utsTeori" class="form-control"  name="utsTeori" required><br><br>
+            
+                        <label for="uasTeori">UAS:</label>
+                        <input type="number" id="uasTeori" class="form-control"  name="uasTeori" required><br><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card" style="background: rgba( 255, 255, 255, 0.25 );
+                  box-shadow: 0 8px 32px 0 rgb(5, 119, 241);
+                  backdrop-filter: blur( 6.5px );
+                  -webkit-backdrop-filter: blur( 6.5px );
+                  border-radius: 10px;
+                  border: 1px solid rgba( 255, 255, 255, 0.18 );">
+                    <div class="card-body text-light">
+                        <legend style="text-align: center; color:rgb(254, 253, 251);;font-family: 'Jersey 15 Charted', sans-serif; font-size: xx-large; "; ">Nilai Praktik</legend>
+                        <label for="presensiPraktik">Presensi:</label>
+                        <input type="number" id="presensiPraktik" class="form-control"  name="presensiPraktik" required><br><br>
+            
+                        <label for="tugasPraktik">Tugas:</label>
+                        <input type="number" id="tugasPraktik" class="form-control"  name="tugasPraktik" required><br><br>
+            
+                        <label for="utsPraktik">UTS:</label>
+                        <input type="number" id="utsPraktik" class="form-control"  name="utsPraktik" required><br><br>
+            
+                        <label for="uasPraktik">UAS:</label>
+                        <input type="number" id="uasPraktik" class="form-control"  name="uasPraktik" required><br><br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+    
+          </fieldset>
+          <button type="button" class="btn btn-primary" onclick="simpanNilai()">Simpan</button>
+<button type="button" class="btn btn-danger" type="reset">Batal</button>
+          
+        
+      </form>
+      <br>
+      <hr>
+      <h2 style="color: white ; font-family: 'Jersey 15 Charted', sans-serif; font-size: xx-large; ">Rincian Nilai</h2>
+    <table class="table"  style="background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgb(5, 119, 241);
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );">
+        <thead class="table-responsive-xxl" >
+            <tr>
+                <th>No</th>
+                <th>NIM</th>
+                <th>Nama</th>
+                <th>Presensi</th>
+                <th>Tugas</th>
+                <th>UTS</th>
+                <th>UAS</th>
+                <th>Nilai Akhir</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody id="tabelNilai" style="background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgb(5, 119, 241);
+        backdrop-filter: blur( 6.5px );
+        -webkit-backdrop-filter: blur( 6.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );">
+            <!-- Data akan ditambahkan di sini -->
+        </tbody>
+    </table>
+
+    <!-- Reset Button-->
+    <button type="button" class="btn btn-warning" onclick="resetTabel()">Reset</button>
+
+    <!-- Footer -->
+    <div class="container-fluid text-light " >
+      <div class="mt-3">
+        <p class="title">Jangan pernah mengirim sandi melalui Aplikasi ini.
+        </p>
+        <p class="mb-3 ">Konten ini tidak dibuat atau didukung oleh Google. 
+        <a href="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf22tWUviFzsTwvPFf2pSFFFNhaGBGdQDIkc5NzGbdJWvf6Hg/reportabuse?source=https://docs.google.com/forms/d/e/1FAIpQLSf22tWUviFzsTwvPFf2pSFFFNhaGBGdQDIkc5NzGbdJWvf6Hg/viewform?usp%3Dsend_form" style="color: white;">Laporan Penyalahgunaan-</a>
+        <a href="https://policies.google.com/terms" style="color: white;">Persyaratan Layanan-</a>
+        <a href="https://policies.google.com/privacy" style="color: white;">Kebijakan Privasi</a>
+        </p>
+      </div>
+        <div class="text-center">
+          <h1 class="text-3xl mb-3" style="font-family: 'Teko', sans-serif;"> <b > Asssessment</b> Application </h1>
+          <p> Create By Ilham Rifandi-23.230.0008 </p>
+      </div>
+    </div>
+  </div>
+  
+      
+      
+  
+    
+    <!-- Java Script-->
+    <script src="main.js"></script>
+
+    <!-- Boostraps Library -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- TailWind Library -->
+    
+</body>
+</html>

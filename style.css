@@ -1,0 +1,17 @@
+/*/Maaf pak cuma iseng wkwkwkw /*/
+body{
+  cursor:wait;
+}
+
+@media (max-width: 767px) {
+
+  .table {
+      overflow-x: auto;
+  }
+
+  .table {
+      width: 100%;
+      display: block;
+      overflow-x: auto;
+  }
+}
