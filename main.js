@@ -22,8 +22,7 @@ let no = 1;
 
             if (!nim || !nama || !presensiTeori || !tugasTeori || !utsTeori || !uasTeori ||
                 !presensiPraktik || !tugasPraktik || !utsPraktik || !uasPraktik) {
-                alert('上記のデータを入力してください
-Jōki no dēta o nyūryoku shite kudasai');
+                alert('Jōki no dēta o nyūryoku shite kudasai');
                 return;
             }
 
